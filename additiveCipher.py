@@ -11,7 +11,7 @@ def encrypt(plaintext,key):
       ciphertext+=new_char
     else:
       ciphertext+=char
-  return ciphertext
+  return ciphertext.upper()
 def decrypt(ciphertext,key):
   plaintext=''
   for char in ciphertext:
@@ -22,7 +22,7 @@ def decrypt(ciphertext,key):
       plaintext+=new_char
     else:
       plaintext+=char
-  return plaintext
+  return plaintext.upper()
 
 def main():
   while True:
