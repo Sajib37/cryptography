@@ -10,6 +10,7 @@ def encrypt(plaintext, keys):
   print(f"Key Stream: {key_stream}")
   
   for letter, key in zip(plaintext,key_stream):
+    plaintext=plaintext.lower()
     if letter in letters:
       position=letters.find(letter)
       key_position=letters.find(key)
